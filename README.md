@@ -1,5 +1,7 @@
 # mqtt_rpi
 
+Websocket issues, blocked some firewalls.
+
 ## Hive
 
 ## EMQX
