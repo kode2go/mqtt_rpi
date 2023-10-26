@@ -12,6 +12,8 @@
 
 `pip install...`
 
+Install issue for client.py was empty, reinstalled using python3
+
 Run in background:
 
 ```
