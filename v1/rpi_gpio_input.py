@@ -47,13 +47,13 @@ def on_message(client, userdata, msg):
         logging.info("Turning GPIO 14 HIGH")
         GPIO.output(GPIO_PIN, GPIO.LOW)
         gpio_state = GPIO.LOW
-        client.publish("encyclopedia/gpio_state", payload="received: high", qos=1)
+        client.publish("demo/state", payload="received: high", qos=1)
     elif msg.payload == b'low':
         print("Turning GPIO 14 LOW")
         logging.info(f"Received message on topic: {msg.topic}, QoS: {str(msg.qos)}, Payload: {payload}")
         logging.info("Turning GPIO 14 LOW")
         GPIO.output(GPIO_PIN, GPIO.LOW)
-        client.publish("encyclopedia/gpio_state", payload="received: low", qos=1)
+        client.publish("demo/state", payload="received: low", qos=1)
 
 # using MQTT version 5 here, for 3.1.1: MQTTv311, 3.1: MQTTv31
 # userdata is user defined data of any type, updated by user_data_set()
@@ -74,7 +74,7 @@ client.on_message = on_message
 client.on_publish = on_publish
 
 # subscribe to all topics of encyclopedia by using the wildcard "#"
-client.subscribe("encyclopedia/#", qos=1)
+client.subscribe("demo/#", qos=1)
 
 # a single publish, this can also be done in loops, etc.
 # client.publish("encyclopedia/temperature", payload="cold", qos=1)
