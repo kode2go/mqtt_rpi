@@ -48,7 +48,7 @@ def on_message(client, userdata, msg):
         GPIO.output(GPIO_PIN, GPIO.LOW)
         gpio_state = GPIO.LOW
         client.publish("encyclopedia/gpio_state", payload="received: high", qos=1)
-    else:
+    elif msg.payload == b'low':
         print("Turning GPIO 14 LOW")
         logging.info(f"Received message on topic: {msg.topic}, QoS: {str(msg.qos)}, Payload: {payload}")
         logging.info("Turning GPIO 14 LOW")
