@@ -8,7 +8,7 @@ import RPi.GPIO as GPIO  # Import the GPIO library for Raspberry Pi
 logging.basicConfig(filename='mqtt_log.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # GPIO pin for control
-GPIO_PIN = 14
+GPIO_PIN = 18
 
 # Initialize the GPIO settings
 GPIO.setmode(GPIO.BCM)
