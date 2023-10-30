@@ -4,7 +4,25 @@ Websocket issues, blocked some firewalls.
 
 ## Hive
 
+![image](https://github.com/kode2go/mqtt_rpi/assets/29664888/90250e98-7693-4cc4-8c38-bd3213521bac)
+
+![image](https://github.com/kode2go/mqtt_rpi/assets/29664888/0c826d90-5146-4931-9095-817e0fc92633)
+
+![image](https://github.com/kode2go/mqtt_rpi/assets/29664888/d8c332aa-ca7a-4a4f-85b7-4aa11cf68ddf)
+
+![image](https://github.com/kode2go/mqtt_rpi/assets/29664888/23f15ea9-9740-43d8-8fbf-73a81c841957)
+
+![image](https://github.com/kode2go/mqtt_rpi/assets/29664888/6ae2b416-55fb-49d4-b3d4-9aa5c96f7d9e)
+
+
+
+
+
+
 ## EMQX
+
+![image](https://github.com/kode2go/mqtt_rpi/assets/29664888/0bb31043-b236-4b97-9680-199e1bef07bf)
+
 
 # local
 
