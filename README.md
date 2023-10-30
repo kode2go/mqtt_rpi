@@ -1,5 +1,7 @@
 # mqtt_rpi
 
+
+## Bugs
 Websocket issues, blocked some firewalls.
 
 ## Hive
@@ -30,7 +32,25 @@ Websocket issues, blocked some firewalls.
 
 # rpi
 
-Pin selection:
+## Setup service
+
+code: mqtt_service
+
+```
+sudo nano /etc/systemd/system/mqtt_01.service
+sudo systemctl enable mqtt_01.service
+sudo systemctl start mqtt_01.service
+sudo systemctl status mqtt_01.service
+```
+
+## Debug
+
+```
+ps aux | grep input_gpio_log.py
+pkill "PS_NUM"
+```
+
+## Pin selection:
 - Issue: pin 8 was going high on restart, needed to keep it low
 -- Resolution: change to pin 10, default low on boot
 -- Notes:
