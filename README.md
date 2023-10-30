@@ -32,6 +32,10 @@ Websocket issues, blocked some firewalls.
 
 # rpi
 
+```
+$ ssh pi@10.0.0.111
+```
+
 ## Setup service
 
 code: mqtt_service
